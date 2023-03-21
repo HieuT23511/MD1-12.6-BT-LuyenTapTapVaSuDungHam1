@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5</title>
+</head>
+<body>
+<script>
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function findStar(star) {
+
+        if (arr1.indexOf(star) !== -1) {
+            document.write(`${star} is the star ${arr2[arr1.indexOf(star)]}.`);
+        }
+        else {
+            document.write(`${star}  not is the star.`);
+        }
+    }
+
+    inputStar = prompt('Enter the star: ')
+    findStar(inputStar);
+</script>
+</body>
+</html>
